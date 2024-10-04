@@ -15,7 +15,22 @@ class HomeController extends Controller
      */
     public function home()
     {
-           return redirect()->route('admin.login');
+        return view('frontend.home');
+    }
+
+    public function management()
+    {
+        return view('frontend.management');
+    }
+
+    public function events()
+    {
+        return view('frontend.events');
+    }
+
+    public function contact()
+    {
+        return view('frontend.contact');
     }
 
     /**

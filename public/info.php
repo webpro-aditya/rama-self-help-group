@@ -1,7 +1,7 @@
 
 <?php
 
-echo "Working";
-echo phpinfo();
+// echo "Working";
+// echo phpinfo();
 
 ?>

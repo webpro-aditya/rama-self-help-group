@@ -1,113 +1,112 @@
-<footer>
-    <section class="background_red pt-3 pb-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 pt-3 pb-3">
-                    <div class="foo_box">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="phone_img">
-                                    <img src="" class="img-fluid1">
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="phone_number">
-                                    <span>Phone</span>
-                                    <p><a href="tel:270-483-9985">270-483-9985</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4 pt-3 pb-3">
-                    <div class="foo_box">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="location_img">
-                                    <img src="" class="img-fluid1">
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="address">
-                                    <span>Address</span>
-                                    <p>202 South Ewing Street, Guthrie KY, 42234</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-2  pt-3 pb-3">
-                    <div class="foo_box border border-0">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <div class="email_img">
-                                    <img src="" class="img-fluid1">
-                                </div>
-                            </div>
-                            <div class="col-md-9 col-sm-9 col-xs-12">
-                                <div class="email">
-                                    <span>Email</span>
-                                    <p><a href="mailto:info@project.com">info@project.com</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Footer -->
+<footer id="footer" class="footer bg-img-center-bottom bg-img-cover" data-tm-bg-img="{{ asset('front/images//footer-bg.jpg') }}">
+    <div class="footer-widget-area pt-120">
+      <div class="container pb-40">
+        <div class="row">
+          <div class="col-md-12 col-lg-3">
+            <div class="tm-widget-contact-info contact-info-style1">
+              <div class="thumb" data-tm-margin-bottom="48">
+                <img alt="Logo" width="200" src="{{ asset('front/img/logo.png') }}">
+              </div>
+              <p>Rama Selfhelp Group is dedicated to Bangles. We work with skilled artisans and developed unique designs.</p>
             </div>
-        </div>
-    </section>
-            <section class="background_black pt-10 footer_border">
-        <div class="container">
-            <div class="row pt-5 pb-4">
-                <div class="col-sm-12 ">
-                    <div class="foo_menu">
-                        <ul class="list  text-center">
-                            <li><a href="{{ route('home') }}">Home</a></li>
-
-                            <li class="dropdown submenu nav-item">
-                                    <a href="">About</a> 
-                            </li>
-                            <li><a href="">Services</a></li> 
-                            <li><a  href="}">BID OPPORTUNITIES</a></li> 
-                            <li><a href="">Past Projects</a></li> 
-                            <li><a href="">Contact</a></li> 
-                        </ul>
-
-                    </div>
-
-                </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="widget widget_nav_menu ml-25">
+              <h4 class="widget-title">Links</h4>
+              <div class="menu-footer-page-list">
+                <ul id="footer-page-list" class="menu">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="{{ route('front.management') }}">Management</a></li>
+                  <li><a href="{{ route('front.products') }}">Products</a></li>
+                  <li><a href="{{ route('front.events') }}">Events</a></li>
+                  <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </section>
-    <section class="background_black">
-        <div class="container">
-            <div class="row pt-5 pb-4">
-                <div class="col-sm-5 pt-5 pb-5 text-center copyright_contant">
-                    <div class="copyright"><a href="">&copy;2023 Project </a> All Rights Reserved <!--|  <a href="">Privacy</a>--> </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="foo_img text-center"> 
-                        <a href=""><img src="" class="img-fluid"></a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h4 class="widget-title mb-40">Latest News</h4>
+              <div class="latest-posts pt-2">
+                <article class="post clearfix pb-0 mb-40">
+                  <a class="post-thumb" href="#"><img src="{{ asset('front/images//banner/banner-1.jpg') }}" alt="Image"></a>
+                  <div class="post-right">
+                    <div class="post-date">
+                      <span class="entry-date text-theme-colored2 pt-0 text-uppercase mb-10">Jan 22 - 2022</span>
                     </div>
-                </div>
-                <div class="col-sm-4 pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="Website_design float-right">
-                                <a href="https://delimp.com" style="text-decoration:none; color:#fff;"><span class="float-left" rel="nofollow">Website Design & Marketing by: </span> <span class="float-left">Delimp</span></a>
-                            </div>
-                        </div>
+                    <p class="post-title m-0"><a href="#">Seminar on developing customer oriented approach</a></p>
+                  </div>
+                </article>
+                <article class="post clearfix pb-0">
+                  <a class="post-thumb" href="#"><img src="{{ asset('front/images//banner/banner-2.jpg') }}" alt="Image"></a>
+                  <div class="post-right">
+                    <div class="post-date">
+                      <span class="entry-date text-theme-colored2 pt-0 text-uppercase mb-10">Jan 22 - 2022</span>
                     </div>
-                </div>
+                    <p class="post-title m-0"><a href="#">Seminar on How to market the products</a></p>
+                  </div>
+                </article>
+              </div>
             </div>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <div class="widget contact-info contact-info-style1">
+              <h4 class="widget-title mb-40">Newsletter</h4>
+              <!-- Mailchimp Subscription Form-->
+              <form id="mailchimp-subscription-form10" class="form-newsletter">
+                <div class="d-grid">
+                  <input type="email" id="mce-EMAIL2" class="form-control font-size-14" placeholder="Email address" name="EMAIL" value="" data-tm-bg-color="#fff" data-tm-height="73px">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-theme-colored1 text-white font-size-14" data-tm-height="73px">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+              <!-- Mailchimp Subscription Form Validation-->
+              <script>
+                (function($) {
+                  $('#mailchimp-subscription-form10').ajaxChimp({
+                    callback: mailChimpCallBack,
+                    url: '//thememascot.us9.list-manage.com/subscribe/post?u=a01f440178e35febc8cf4e51f&amp;id=49d6d30e1e'
+                  });
+                  function mailChimpCallBack(resp) {
+                    // Hide any previous response text
+                    var $mailchimpform = $('#mailchimp-subscription-form10'),
+                      $response = '';
+                    $mailchimpform.children(".alert").remove();
+                    if (resp.result === 'success') {
+                      $response = '<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                    } else if (resp.result === 'error') {
+                      $response = '<div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + resp.msg + '</div>';
+                    }
+                    $mailchimpform.prepend($response);
+                  }
+                })(jQuery);
+              </script>
+            </div>
+          </div>
         </div>
-    </section>
-</footer>
-<div class="marron-banner" id="marron_banner_div" style="display:none">
-  <span class="text-banner-marron">Project
-</span>
-<span class="close" id="close_mbanner">X</span></div>
-<button id="ihavecookiesBtn" style="display:none">Open Settings</button>
-
-<!-- footer End  -->
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-bottom-style1">
+                <div class="footer-paragraph font-size-15">© Copyright 2022 by ramaselfhelpgroup.org</div>
+                <div class="widget widget-social-list-custom clearfix mb-0">
+                  <ul class="styled-icons icon-dark icon-circled icon-hover-theme-colored1">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->

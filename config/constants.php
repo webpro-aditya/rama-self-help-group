@@ -12,8 +12,8 @@ return [
      */
     'stripe_test_mode' => env('STRIPE_TEST_MODE', true),
 
-    'stripe_test_key' => env('STRIPE_TEST_KEY', 'pk_test_51IKlI2A8qdwareL5104XXrCtdYZmnbdQafpZ4LukPs4cLi9qcWkCvsgf4tsjOdd6hvs5oefwJOk2W2W779PvdnAr00ty2EyKyK'),
-    'stripe_test_secret' => env('STRIPE_TEST_SECRET', 'sk_test_51IKlI2A8qdwareL5tPucgof5zXRuTGg0cuouGZdkwx09VgSw9e8WeZL8nsNDApD2DHo25KjFnh77hY3D7123dBTa00rE875s2r'),
+    'stripe_test_key' => env('STRIPE_TEST_KEY', ''),
+    'stripe_test_secret' => env('STRIPE_TEST_SECRET', ''),
     
     'stripe_key' => env('STRIPE_KEY', ''),
     'stripe_secret' => env('STRIPE_SECRET', ''),

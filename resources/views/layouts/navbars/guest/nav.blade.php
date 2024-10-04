@@ -1,67 +1,74 @@
-<header class="{{ (Request::is('/') || Request::is('home')) ? '' : 'header1' }}" >
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <!-- Brand -->
-            <a class="navbar-brand" href="">
-                <img src="{{asset('assets/frontend/images/logo.png')}}" class="img-fluid"></a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="fa fa-bars"></span>
-            </button>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav pull-right">
-                    <li class="nav-item">
-                        <a class="my-btn rounded-0" href="">{{ __('Home') }}</a>
-                    </li>
-                    <li class="dropdown submenu nav-item">
-                        <a class="nav-link" href="">{{ __('About') }}</a>
-                        <ul class="dropdown-menu about dropdown-content">
-                            <li><a href="">{{ __('Careers') }}</a></li><hr>
-                            <li><a href="">{{ __('Staff') }}</a></li>
+<div class="side-panel-body-overlay"></div>
+
+<div id="wrapper" class="clearfix">
+    <!-- Header -->
+    <header id="header" class="header header-layout-type-header-2rows">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-auto header-top-left align-self-center text-center text-xl-start">
+                        <ul class="element contact-info">
+                            <li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> Tel: 8882190251, 9711023091</li>
+                            <li class="contact-email"><i class="fa fa-envelope font-icon sm-display-block"></i> ramashg325@gmail.com</li>
+                            <li class="contact-address"><i class="fa fa-map font-icon sm-display-block"></i> 38/1299, D.D.A Janta Flat, Madangir, New Delhi</li>
                         </ul>
-                    </li>						
-                    <li class="nav-item">
-                        <a class="nav-link" href="">{{ __('Services') }}</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">{{ __('Bid Opportunities') }}</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="">{{ __('Bid Results') }}</a>
-                    </li> 
-                  
-                    <li class="nav-item">
-                      <a class="nav-link" href="">{{ __('Portfolio') }}</a>
-                     
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link hover btn btn-sm preview contact_btn" href="">{{ __('Contact') }}</a>
-                    </li> 
-                </ul>
-            </div> 
-        </nav>
-    </div>
-</header>
-@if(Request::is('/') || Request::is('home'))
-<section class="slider as">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active slide1">
-                <div class="carousel-caption  d-md-block">
-                    <p></p>
+                    </div>
+                    <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
+                        <div class="element pt-0 pt-lg-10 pb-0">
+                            <a href="e-brochure.php" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">E-Brochure</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-@endif
-@if(Request::is('about-us'))
-<section class="title_wrapper1 overlaycp text-center">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12"><h3 class="title_heading1">{{ __('ABOUT US') }}</h3></div>			
-		</div>	
-	</div>
-</section>
-@endif
+        <div class="header-nav tm-enable-navbar-hide-on-scroll">
+            <div class="header-nav-wrapper navbar-scrolltofixed">
+                <div class="menuzord-container header-nav-container">
+                    <div class="container position-relative">
+                        <div class="row header-nav-col-row">
+                            <div class="col-sm-auto align-self-center">
+                                <a class="menuzord-brand site-brand" href="{{ route('home') }}">
+                                    <img class="logo-default logo-1x" src="{{ asset('front/img/logo.png') }}" alt="Logo">
+                                    <img class="logo-default logo-2x retina" src="{{ asset('front/img/logo.png') }}" alt="Logo">
+                                    <p>Rama Selfhelp Group</p>
+                                </a>
+                            </div>
+                            <div class="col-sm-auto ms-auto pr-0 align-self-center">
+                                <nav id="top-primary-nav" class="menuzord theme-color1" data-effect="fade" data-animation="none" data-align="right">
+                                    <ul id="main-nav" class="menuzord-menu">
+                                        <li class="active">
+                                            <a href="{{ route('home') }}">Home</a>
+                                        </li>
+                                        <!--<li><a href="#">About Us</a></li>-->
+                                        <li><a href="{{ route('front.management') }}">Management</a></li>
+                                        <li><a href="{{ route('front.products') }}">Products</a></li>
+                                        <li><a href="{{ route('front.events') }}">Events</a></li>
+                                        <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-sm-auto align-self-center nav-side-icon-parent">
+                                <ul class="list-inline nav-side-icon-list">
+                                    <li class="hidden-mobile-mode"><a href="#" id="top-nav-search-btn"><i class="search-icon fa fa-search"></i></a></li>
+                                </ul>
+                                <div id="top-nav-search-form" class="clearfix">
+                                    <form action="#" method="GET">
+                                        <input type="text" name="s" value="" placeholder="Type and Press Enter..." autocomplete="off" />
+                                    </form>
+                                    <a href="#" id="close-search-btn"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row header-nav-clone-col-row d-block d-xl-none">
+                            <div class="col-12">
+                                <nav id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+                                    <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

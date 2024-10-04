@@ -3,6 +3,8 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\StripeController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Route::get('/check', function() {
+// echo Illuminate\Support\Facades\Hash::make('123456');
+// });
 
 // Authenticated routes
 Route::group(['middleware' => 'auth'], function () {
@@ -38,6 +42,13 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('/login', [AdminController::class, 'login'])->name('admin.login');
     Route::get('/register', [HomeController::class, 'register'])->name('register');
     Route::post('/register', [AdminController::class, 'createUser'])->name('createUser');
+
+    //Front Pages
+    Route::get('/management', [HomeController::class, 'management'])->name('front.management');
+    Route::get('/products', [ProductController::class, 'index'])->name('front.products');
+    Route::get('/events', [HomeController::class, 'events'])->name('front.events');
+    Route::get('/contact', [HomeController::class, 'contact'])->name('front.contact');
+    Route::get('/checkout/{id}', [StripeController::class, 'checkout'])->name('front.checkout');
 
 
 
