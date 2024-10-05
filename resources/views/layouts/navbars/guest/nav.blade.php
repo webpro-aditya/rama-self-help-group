@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-xl-auto ms-xl-auto header-top-right align-self-center text-center text-xl-end">
                         <div class="element pt-0 pt-lg-10 pb-0">
-                            <a href="e-brochure.php" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">E-Brochure</a>
+                            <a href="{{ route('front.e-brochure') }}" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">E-Brochure</a>
                         </div>
                     </div>
                 </div>

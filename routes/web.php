@@ -48,6 +48,7 @@ Route::group(['middleware' => 'guest'], function () {
     Route::get('/products', [ProductController::class, 'index'])->name('front.products');
     Route::get('/events', [HomeController::class, 'events'])->name('front.events');
     Route::get('/contact', [HomeController::class, 'contact'])->name('front.contact');
+    Route::get('/e-brochure', [HomeController::class, 'eBrochure'])->name('front.e-brochure');
     Route::get('/checkout/{id}', [StripeController::class, 'checkout'])->name('front.checkout');
 
 

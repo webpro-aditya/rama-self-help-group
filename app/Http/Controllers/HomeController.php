@@ -33,6 +33,11 @@ class HomeController extends Controller
         return view('frontend.contact');
     }
 
+    public function eBrochure()
+    {
+        return view('frontend.e-brochure');
+    }
+
     /**
      * Login 
      * 

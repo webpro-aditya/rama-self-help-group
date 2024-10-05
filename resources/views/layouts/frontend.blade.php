@@ -60,9 +60,11 @@
 
   @yield('guest')
 
-  <script src="{{asset('front/js/jquery.js')}}" type="text/javascript"></script>
-  <script src="{{asset('front/js/bootstrap.min.js')}}" type="text/javascript"></script>
+  <!-- <script src="{{asset('front/js/jquery.js')}}" type="text/javascript"></script>
+  <script src="{{asset('front/js/bootstrap.min.js')}}" type="text/javascript"></script> -->
   <!-- JS | Custom script for all pages -->
+  <script src="{{ asset('front/js/custom.js') }}"></script>
+  <script src="{{ asset('front/js/main.js') }}"></script>
   @yield('front-footer')
 </body>
 
