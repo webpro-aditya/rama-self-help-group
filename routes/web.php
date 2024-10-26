@@ -56,6 +56,13 @@ Route::group(['middleware' => 'guest'], function () {
 
     Route::get('/thanks', [HomeController::class, 'thanks'])->name('page.thanks');
 
+    //Policies, Terms
+    Route::get('/privacy-policy', [HomeController::class, 'privacyPolicy'])->name('page.privacyPolicy');
+    Route::get('/terms-and-conditions', [HomeController::class, 'termsAndConditions'])->name('page.termsAndConditions');
+    Route::get('/cancellation-refund', [HomeController::class, 'cancellationRefund'])->name('page.cancellationRefund');
+    Route::get('/shipping-delivery', [HomeController::class, 'shippingDelivery'])->name('page.shippingDelivery');
+
+
     //Page Not Found
     // Route::fallback([PageController::class, 'pageNotFound'])->name('pageNotFound');
 });

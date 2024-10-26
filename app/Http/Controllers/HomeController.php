@@ -60,4 +60,24 @@ class HomeController extends Controller
     {
         return view('frontend.thanks');
     }
+
+    public function privacyPolicy()
+    {
+        return view('frontend.policies.privacyPolicy');
+    }
+
+    public function termsAndConditions()
+    {
+        return view('frontend.policies.termsAndConditions');
+    }
+
+    public function cancellationRefund()
+    {
+        return view('frontend.policies.cancellationRefund');
+    }
+
+    public function shippingDelivery()
+    {
+        return view('frontend.policies.shippingDelivery');
+    }
 }
