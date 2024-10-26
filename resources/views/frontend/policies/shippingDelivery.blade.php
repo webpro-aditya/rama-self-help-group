@@ -9,7 +9,7 @@
             <div class="row">
                   <div class="col">
                         <h1>Shipping policy</h1>
-                        <p>This shipping policy explains how Rama Self Help Group operates its shipping procedures and how we strive to meet your expectations with every order. Whether you’re a first-time buyer or a returning customer, we want to ensure that your experience with us is smooth and satisfactory, right from placing your order to the moment it arrives at your doorstep. This policy has been created with the help of the <a href="https://www.websitepolicies.com/shipping-policy-generator">shipping policy generator</a>.</p>
+                        <p>This shipping policy explains how Rama Self Help Group operates its shipping procedures and how we strive to meet your expectations with every order. Whether you’re a first-time buyer or a returning customer, we want to ensure that your experience with us is smooth and satisfactory, right from placing your order to the moment it arrives at your doorstep.</p>
                         <p>Please read this shipping policy together with our <a href="https://ramaselfhelpgroup.org//terms-and-conditions">terms and conditions</a> to familiarize yourself with the rest of our general guidelines.</p>
                         <div class="toc">
                               <h3>Table of contents</h3>

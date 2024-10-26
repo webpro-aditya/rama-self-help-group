@@ -11,7 +11,6 @@
                         <h2>Return and Refund Policy</h2>
                         <p>Last updated: October 26, 2024</p>
                         <p>Thank you for shopping at Rama Self Help Group.</p>
-                        <p>If, for any reason, You are not completely satisfied with a purchase We invite You to review our policy on refunds and returns. This Return and Refund Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-return-refund-policy-generator/" target="_blank">Free Return and Refund Policy Generator</a>.</p>
                         <p>The following terms are applicable for any products that You purchased with Us.</p>
                         <h2>Interpretation and Definitions</h2>
                         <h3>Interpretation</h3>
