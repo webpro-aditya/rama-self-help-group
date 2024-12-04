@@ -10,6 +10,15 @@ use Exception;
 
 class RazorpayController extends Controller
 {
+    protected $razorKey;
+    protected $razorSecret;
+
+    public function __construct()
+    {
+        $this->razorKey = env('RAZOR_KEY');
+        $this->razorSecret = env('RAZOR_SECRET'); 
+    }
+
     /**
      * Write code on Method
      *
@@ -31,7 +40,7 @@ class RazorpayController extends Controller
     {
         $input = $request->all();
   
-        $api = new Api("rzp_test_RDSdt5JqgmuM39", "RMaqDg8oPHnAeMBE1Oa5msbi");
+        $api = new Api($this->razorKey, $this->razorSecret);
   
         $payment = $api->payment->fetch($input['razorpay_payment_id']);
   

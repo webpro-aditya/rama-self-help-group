@@ -89,7 +89,7 @@
                            <form action="{{ route('front.payment') }}" method="POST">
                               @csrf
                               <script src="https://checkout.razorpay.com/v1/checkout.js"
-                                 data-key="rzp_test_RDSdt5JqgmuM39"
+                                 data-key="{{ env('RAZOR_KEY') }}"
                                  data-amount="{{ $product->price * 100 }}" 
                                  data-currency="INR"
                                  data-buttontext="Proceed to Pay ₹{{ $product->price }}"
